@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americanas - Cadastro</title>
+</head>
+
+<body>
+    
+    <section>
+        <h2>criar seu cadastro</h2>
+        <p>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
+        <p>*campos obrigatórios</p>    
+    </section>
+        <br>
+    
+    <section>
+        <!-- Inicio do Formulário -->
+        <form action="pagina_destino" method="post">
+
+            <label>*nome completo</label> <br>
+            <input cursor="text" type="text"/>
+            <br><br>
+
+            <label>*gênero</label><br>
+            <span>pra gente te conhecer um pouquinho melhor :)</span><br>
+            <input type="radio" name="genero" id=""/>feminino
+            <input type="radio" name="genero" id=""/>masculino
+            <input type="radio" name="genero" id=""/>não informar
+            <br><br>
+
+            <label>*data de nascimento</label><br>
+            <span>necessário para verificar maioridade, no formato DD/MM/AAAA</span><br>
+            <input placeholder="__/__/____" type="tel" name="data" id=""/>
+            <br><br>
+
+            <label>*CPF</label><br>
+            <input placeholder="___.___.___-__" type="tel" name="cpf" id=""/><br>
+            <a target="_blank" href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas"> <ins>é pessoa juridica? conheça a americanas empresas </ins> </a>
+            <br><br>
+
+            <label>*telefone</label><br>
+            <span>caso a gente precise entrar em contato sobre seus pedidos</span><br>
+            <input type="tel" name="telefone"/> <br>
+            <input type="checkbox" name="notificacao_wpp" /> receber notificações via whatsapp
+            <br><br>
+
+            <label>*e-mail</label><br>
+            <input type="email" name="email" id=""/><br>
+            <input type="checkbox" name="emails_promocionais" checked /> receber emails promocionais
+            <br><br>
+
+            <label>*senha</label><br>
+            <input type="password" name="senha" />
+            <br><br>
+            
+            <input type="checkbox" name="compartilhar_dados" checked> compartilhar meus dados com parceiros para ter conteúdos personalizados, veja <a target="_blank" href="https://www.americanas.com.br/hotsite/politica-de-privacidade"><ins>como funciona.</ins></a>
+            <br><br>
+
+            <button type="submit">criar seu cadastro</button>
+            <br><br>
+
+            <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <a target="_blank" href="https://www.americanas.com.br/hotsite/politica-de-privacidade"><ins><b>Politica de Privacidade</b></ins></a></p>
+            <br>
+
+            <p>já tem cadastro? <a target="_blank" href="https://cliente.americanas.com.br/simple-login/"> <ins><b>entrar</b></ins></a></p>
+
+        </form>
+        <!-- Fim do Formulário -->
+    </section>
+    
+</body>
+</html>
