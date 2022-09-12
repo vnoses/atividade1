@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- method utilizar POST! action = P´ágina de destino dos dados enviados, enctype pra enviar arquivos -->
+    <form method="post" action="https://www.globo.com" enctype="multipart/form-data"></form>
+
+    <!-- Inputs Básicos -->   
+    <form action="/htmls/inputs_basicos.html" method="post">
+        
+        <label for="">Text</label> <br>
+        <input placeholder="Insira seu nome" type="text" name="nome" /> <br>
+    
+        <label for="">Password</label> <br>
+        <input placeholder="Insira sua senha" type="password" name="senha" /><br>  
+
+        <label >Time</label><br>
+        <input type="text" name="time" list="lista_times"/>
+        <datalist id="lista_times">
+            <option value="Palmeiras">
+            <option value="Santos" >
+            <option value="Flamengo" >
+            <option value="Corinthians" >
+            <option value="Atletico Mg" >
+            <option value="Cruzeiro" >
+        </datalist><br>
+
+        <label for="">Radio</label> <br>
+        <input type="radio" name="opcoes" /> A <br>
+        <input type="radio" name="opcoes" /> B <br>
+        <input type="radio" name="opcoes" /> C <br>
+
+        <label for="">Checkbox</label>  <br>
+        <input type="checkbox" name="multipla_escolha" />1 <br>
+        <input type="checkbox" name="multipla_escolha" />2 <br>
+        <input type="checkbox" name="multipla_escolha" />3 <br>
+
+        <label for="">TextArea</label><br>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea> <br> <br>
+
+        <label for="">Selecione um Arquivo</label><br>
+        <input type="file" name="arquivos" /> <br>
+
+        <label>Sexo</label> <br>
+         <!-- Fim Inputs Basicos-->
+
+
+<!-- INPUT SELECT -->
+        <select name="sexo" >
+             <option value="M">Masculino</option>
+             <option value="F">Feminino</option>
+        <!-- select value="M ou F" coloca um valor ja predefinido" -->
+        </select> <br>
+
+    <label for="">Marcas de Carros</label> <br>
+    <select name="carro" >
+        <optgroup label="Italianos">
+            <option value="Ferrari">Ferrari</option>
+            <option value="FIAT">Fiat</option>
+        </optgroup>
+        <optgroup label="Alemaes">
+            <option value="bmw">BMW</option>
+            <option value="audi">AUDI</option>
+            <option value="mercedes">Mercedes-Benz</option>
+
+        </optgroup>
+    </select> <br><br>
+    <!-- Fim INPUT SELECT -->
+
+    <!-- BUTTONS -->
+    <!-- necessitam de JAVASCRIPT para que tenham funcionalidade -->
+    <label >Enviar Button</label>
+    <input type="button" value="Botao Sem Funcao"> <br>
+    <!-- Funçao de submeter o o formulario ao seu destino (action="destino, que pode ser uma pasta ou url.")-->
+    <label >Enviar Submit</label>
+    <input type="submit" value="Enviar">
+    
+
+
+    </form>  
+</body>
+</html>
